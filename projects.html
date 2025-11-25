@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Sadia's portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bodyClass" id="bd">
+    <ul class="menu-items">
+        <li style="float: left;font-family: initial;" class="main-item">
+            Sadia's Portfolio
+        </li>
+        <!-- <li>
+            User initials
+        </li> -->
+        <li style="font-family: initial;">
+            <a style="text-decoration: none; color:ivory" href="about.html">About me</a>
+        </li>
+        <li style="font-family: initial;" class="active1">
+            Projects
+        </li>
+    </ul>
+    <div class="main-wrapper">
+        <div class="project-wrapper">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Professional projects')" id="defaultOpen">Professional projects</button>
+                <button class="tablinks" onclick="openCity(event, 'Personal projects')">Personal projects</button>
+            </div>
+            <div id="Professional projects" class="tabcontent">
+                <h3>During my tenure in professional settings, I've led and collaborated on the following projects.</h3>
+                <button class="collapsible">SOC Accelerator</button>
+                    <div class="content">
+                        <div class="innercontent">
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Product Overview</legend>
+                                <div class="innerpara">
+                                    Its every organizations responsibility to ensure customer data is protected and managed effectively.
+                                    To ensure and assess this, the AICPA (American Institute of Certified Public Accountants) developed certain frameworks.
+                                    Most of these frameworks are designed to audit and provide compliant reports to organizations aiming to build trust with their customers, gain a competitive edge or enhance internal policies.
+                                </div>
+                                <u>Product Users</u>
+                                <div class="innerpara">
+                                    The end users of this product are the consultants of a CPA firm who examine the organization's control and provide the reports.
+                                </div>
+                                <u>Problem Statement</u>
+                                <div class="innerpara">
+                                    The consultants have to manually track each control with its associated point of focus for every new request (engagement) as there is no centralized system to manage it.
+                                </div>
+                                <u>Product Objective</u>
+                                <div class="innerpara">
+                                    The aim is to have a product that:
+                                    <div style="text-indent: 5%;">1. &ensp;Maintains the relations between controls and the point of focuses that the controls address.</div>
+                                    <div style="text-indent: 5%;">2. &ensp;Allow control description modifications.</div>
+                                    <div style="text-indent: 5%;">3. &ensp;Allow control additions while ensuring they are mapped to specific point of focus(es).</div>
+                                    <div style="text-indent: 5%;">4. &ensp;Allow control deletions by accepting a reasonable rationale.</div>
+                                    <div style="text-indent: 5%;">5. &ensp;Have multiple review levels to ensure high quality outcome for each request.</div>
+                                    <div style="text-indent: 5%;">6. &ensp;Allow cloning engagements at different levels.</div>
+                                    <div style="text-indent: 5%;">7. &ensp;Generate reports.</div>
+                                </div>
+                            </fieldset><br/>
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Strategy & Execution</legend>
+                                <div class="innerpara">To build the product, we had a diverse team:
+                                    <div style="text-indent: 5%;">&bull; &ensp;The business team of SMEs to provide their valuable insights of how the mappings should be linked.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;The prod team to design prototypes and perform quality checks.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;The design team to provide the aesthetics and ensure effective user experience.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;The legal team to ensure we work according to the set procedures and are compliant to the policies.</div>
+                                </div>
+                                <u>Prioritization</u>
+                                <div class="innerpara">
+                                    The roadmap was created by ensuring that the end users receive the most effective features in the first release.
+                                </div>
+                                <u>Methodology & Tools</u>
+                                <div class="innerpara">
+                                    For this project, we followed the Agile methodology to achieve accuracy in terms of meeting the desired requirements.
+                                    The Scrum framework was chosen in order to consistently take feedback from the users and incorporate the desired changes in every iteration.
+                                    The team used Azure DevOps to conduct the Scrum ceremonies.
+                                </div>
+                            </fieldset><br/>
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Product Impact & Metrics</legend>
+                                <div class="card-container">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <div class="circle">
+                                                    <span class="circle-content">96</span>%
+                                                </div>
+                                                <p class="description">Increase in consistency across report formats</p>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <div class="graph-wrapper">
+                                                    <div class="y-axis-label">Error percentage</div>
+                                                    <div class="y-axis-units">
+                                                        <div>32</div>
+                                                        <div>28</div>
+                                                        <div>24</div>
+                                                        <div>20</div>
+                                                        <div>16</div>
+                                                        <div>12</div>
+                                                        <div>8</div>
+                                                        <div>4</div>
+                                                    </div>
+                                                    <div class="bar-graph">
+                                                        <div class="bar manual P1first"><span>Manual</span></div>
+                                                        <div class="bar asset P1first"><span>Asset</span></div>
+                                                    </div>
+                                                    <div class="x-axis-line"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <div class="circle">
+                                                    <span class="circle-content">86</span>%
+                                                </div>
+                                                <p class="description">Decrease in time consumption for manual data collection</p>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <div class="graph-wrapper">
+                                                    <div class="y-axis-label">Time (in secs)</div>
+                                                    <div class="y-axis-units">
+                                                        <div>1600</div>
+                                                        <div>1400</div>
+                                                        <div>1200</div>
+                                                        <div>1000</div>
+                                                        <div>800</div>
+                                                        <div>600</div>
+                                                        <div>400</div>
+                                                        <div>200</div>
+                                                    </div>
+                                                    <div class="bar-graph">
+                                                        <div class="bar manual P1second"><span>Manual</span></div>
+                                                        <div class="bar asset P1second"><span>Asset</span></div>
+                                                    </div>
+                                                    <div class="x-axis-line"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <div class="circle">
+                                                    <span class="circle-content">83</span>%
+                                                </div>
+                                                <p class="description">Decrease in time consumption for engagement setup via cloning</p>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <div class="graph-wrapper">
+                                                    <div class="y-axis-label">Time (in hours)</div>
+                                                    <div class="y-axis-units">
+                                                        <div>8</div>
+                                                        <div>7</div>
+                                                        <div>6</div>
+                                                        <div>5</div>
+                                                        <div>4</div>
+                                                        <div>3</div>
+                                                        <div>2</div>
+                                                        <div>1</div>
+                                                    </div>
+                                                    <div class="bar-graph">
+                                                        <div class="bar manual P1third"><span>Manual</span></div>
+                                                        <div class="bar asset P1third"><span>Asset</span></div>
+                                                    </div>
+                                                    <div class="x-axis-line"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset><br/>
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Reflections</legend>
+                                <div class="innerpara">Building the SOC Accelerator reinforced the importance of deep domain immersion and continuous user feedback.
+                                    <div style="text-indent: 5%;">&bull; &ensp;Interviewing SMEs early helped us avoid costly assumptions and shaped a product that truly aligned with user workflows.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Early mockups sparked conversations that led to critical design pivots.</div>
+                                </div>
+                            </fieldset><br/>
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Artefacts</legend>
+                                <div class="innerpara">To comply with my employer's confidentiality and privacy policies, the mockups have been provided instead of the exact artefacts.
+                                </div>
+                                <div class="artefacts-container">
+                                    <img class="P1Art1 enlargeable" src="SOCAccelerator.png" width="100%">
+                                    <div class="P1Art2">
+                                        The following are macro enabled excel prototypes that mimic the addition and deletion operations of an engagement's controls.
+                                        <br/><br/>
+                                        <a href="assets/SOCA_EngOp_Prototypes.xlsm" download style="
+                                        text-decoration: none;
+                                        padding: 0.5em 1em;
+                                        background-color: rgba(22,86,198,0.8);
+                                        color: white;
+                                        border-radius: 5px;
+                                        display: inline-flex;
+                                        align-items: center;
+                                      ">
+                                        <i class="fas fa-file-download" style="margin-right: 0.5em;"></i> SOCA_EngOp_Prototypes.xlsm
+                                      </a>
+                                      <br/><br/>
+                                      Unfortunately, on successful download of this file, you may not be able to view it in its full glory since macros are commonly used to distribute malware.<br/><br/>
+                                      You can follow the steps mentioned <a href='https://support.microsoft.com/en-us/topic/a-potentially-dangerous-macro-has-been-blocked-0952faa0-37e7-4316-b61d-5b5ed6024216'>here</a> or better yet, connect with me so that I can walk you through my work.<br/><br/>
+                                      If you are a risk taker and have unblocked the macro enabled file by following the steps in the above shared link, you will still have to click on the 'Enable Content' button upon opening the file, for the macro functions to work seamlessly.<br/>
+                                      <img class="enlargeable" src="WarningImageMacros.png" style="cursor: pointer;">
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                <button class="collapsible">Supply Disruption Identifier</button>
+                    <div class="content">
+                        <div class="innercontent">
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Product Overview</legend>
+                                <div class="innerpara">
+                                    Supply chain disruptions can have significant financial and operational impacts on organizations. The Supply Disruption Identifier (SDI) is a web-based application designed to proactively monitor global news and online articles to detect adverse events that may affect a company's suppliers. By automating the identification and categorization of disruptions, SDI empowers organizations to respond swiftly and mitigate risks across their supply chain.
+                                </div>
+                                <u>Product Users</u>
+                                <div class="innerpara">
+                                    The primary users of SDI are:
+									<div style="text-indent: 5%;">&bull; &ensp;Procurement and supply chain teams in Fortune 500 companies</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Risk management professionals</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Operations leaders seeking real-time supplier intelligence</div>
+                                </div>
+                                <u>Problem Statement</u>
+                                <div class="innerpara">
+                                    Organizations lack a scalable mechanism to monitor adverse mentions of their suppliers across the internet. Manual tracking is inefficient, reactive, and prone to oversight, especially when disruptions are buried in unstructured content.
+                                </div>
+                                <u>Product Objective</u>
+                                <div class="innerpara">
+                                    SDI aims to:
+                                    <div style="text-indent: 5%;">1. &ensp;Extract articles from publicly accessible websites that permit data extraction.</div>
+                                    <div style="text-indent: 5%;">2. &ensp;Detect mentions of suppliers using keyword matching and entity recognition.</div>
+                                    <div style="text-indent: 5%;">3. &ensp;Identify adverse content that could impact supplier performance or reputation.</div>
+                                    <div style="text-indent: 5%;">4. &ensp;Analyze article polarity to determine sentiment and severity.</div>
+                                    <div style="text-indent: 5%;">5. &ensp;Categorize disruptions into predefined buckets such as Labor, Security, Financial, Environmental, etc.</div>
+									<div style="text-indent: 5%;">6. &ensp;Display affected suppliers in a dynamic dashboard for decision-makers.</div>
+									<div style="text-indent: 5%;">7. &ensp;Notify users when critical suppliers are flagged in adverse articles.</div>
+                                </div>
+                            </fieldset><br/>
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Strategy & Execution</legend>
+                                <div class="innerpara">To build SDI, we assembled a cross-functional team with deep expertise in supply chain, NLP, and enterprise software:
+                                    <div style="text-indent: 5%;">&bull; &ensp;Business Team: Defined supplier keywords, disruption categories, and risk thresholds.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Product Team: Designed algorithms for supplier detection, sentiment analysis, and categorization.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Design Team: Created an intuitive dashboard to visualize supplier impact and article metadata.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Engineering Team: Built scalable backend pipelines for article ingestion and real-time analysis.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Legal & Compliance Team: Ensured ethical and compliant data extraction from public sources.</div>
+                                </div>
+                                <u>Prioritization</u>
+                                <div class="innerpara">
+                                    The MVP focused on:
+                                    <div style="text-indent: 5%;">&bull; &ensp;Real-time dashboard of affected suppliers.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;High-accuracy supplier matching.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Polarity scoring and disruption categorization.</div>
+                                </div>
+                                <u>Methodology & Tools</u>
+                                <div class="innerpara">
+                                    We adopted Agile methodology to ensure iterative development and stakeholder feedback incorporation:
+                                    <div style="text-indent: 5%;">&bull; &ensp;Scrum framework enabled bi-weekly sprints, backlog grooming, and sprint reviews.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Azure DevOps: Used for sprint planning, task tracking, and release management.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Continuous Feedback Loop: Stakeholders reviewed dashboard prototypes and NLP outputs regularly.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Model Training: Leveraged pre-trained NLP models fine-tuned on supply chain-specific corporations.</div>
+                                </div>
+                            </fieldset><br/>
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Product Impact & Metrics</legend>
+                                <div class="card-container">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <div class="circle">
+                                                    <span class="circle-content">67</span>%
+                                                </div>
+                                                <p class="description">Decrease in time spent on tracking supplier-related news</p>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <div class="graph-wrapper">
+                                                    <div class="y-axis-label">Time (in hours)</div>
+                                                    <div class="y-axis-units">
+                                                        <div>40</div>
+                                                        <div>35</div>
+                                                        <div>30</div>
+                                                        <div>25</div>
+                                                        <div>20</div>
+                                                        <div>15</div>
+                                                        <div>10</div>
+                                                        <div>5</div>
+                                                    </div>
+                                                    <div class="bar-graph">
+                                                        <div class="bar manual P2first"><span>Manual</span></div>
+                                                        <div class="bar asset P2first"><span>Asset</span></div>
+                                                    </div>
+                                                    <div class="x-axis-line"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <div class="circle">
+                                                    <span class="circle-content">75</span>%
+                                                </div>
+                                                <p class="description">Increase in precise detection of disruption</p>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <div class="graph-wrapper">
+                                                    <div class="y-axis-label">Time (in hours)</div>
+                                                    <div class="y-axis-units">
+                                                        <div>14</div>
+                                                        <div>12</div>
+                                                        <div>10</div>
+                                                        <div>8</div>
+                                                        <div>6</div>
+                                                        <div>4</div>
+                                                        <div>2</div>
+                                                    </div>
+                                                    <div class="bar-graph">
+                                                        <div class="bar manual P2second"><span>Manual</span></div>
+                                                        <div class="bar asset P2second"><span>Asset</span></div>
+                                                    </div>
+                                                    <div class="x-axis-line"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <div class="circle">
+                                                    <span class="circle-content">83</span>%
+                                                </div>
+                                                <p class="description">Decrease in time spent on article categorization</p>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <div class="graph-wrapper">
+                                                    <div class="y-axis-label">Time (in hours)</div>
+                                                    <div class="y-axis-units">
+                                                        <div>7</div>
+                                                        <div>6</div>
+                                                        <div>5</div>
+                                                        <div>4</div>
+                                                        <div>3</div>
+                                                        <div>2</div>
+                                                        <div>1</div>
+                                                    </div>
+                                                    <div class="bar-graph">
+                                                        <div class="bar manual P2third"><span>Manual</span></div>
+                                                        <div class="bar asset P2third"><span>Asset</span></div>
+                                                    </div>
+                                                    <div class="x-axis-line"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset><br/>
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Reflections</legend>
+                                <div class="innerpara">Building SDI highlighted the importance of domain-specific intelligence and iterative design:
+                                    <div style="text-indent: 5%;">&bull; &ensp;Early Engagement with Procurement Experts: Interviews with supply chain SMEs helped define meaningful disruption categories and avoid generic sentiment scoring.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Prototype Testing with Real Articles: Early mockups using actual news content revealed edge cases in supplier name matching and led to key algorithm refinements.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Feedback-Driven Categorization: User feedback shaped the final taxonomy of disruption types, ensuring relevance across industries.</div>
+                                </div>
+                            </fieldset><br/>
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Artefacts</legend>
+                                <div class="innerpara">Due to confidentiality and data sensitivity, mockups have been provided in place of production artefacts.
+                                </div>
+                                <div class="artefacts-container">
+                                    <img class="P3Art1 enlargeable" src="SDI1.png" width="100%">
+                                    <img class="P3Art2 enlargeable" src="SDI2.png" width="100%">
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                <button class="collapsible">Script Automator</button>
+                    <div class="content">
+                        <div class="innercontent">
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Product Overview</legend>
+                                <div class="innerpara">
+                                    Any asset's lifespan depends on its quality. To ensure consistent quality product is delivered to the end users, most products undergo rigorous testing.
+                                    One of the type of testing is to ensure that the product doesn't deviate from its original purpose and quality standard; A repetitive set of test scripts - Regression suites.
+                                    To accomplish this, the Script Automator was developed. It is a low-code automation tool designed to streamline the creation and maintenance of test scripts for web applications.
+                                    It empowers users to generate test cases by either manually scraping DOM elements or using an intuitive click-and-record interface. Once elements are captured, users can edit and customize the test logic, enabling dynamic and reusable test flows.
+                                    The asset reduces dependency on traditional scripting, accelerates QA cycles, and enhances test coverage with minimal manual effort.
+                                </div>
+                                <u>Product Users</u>
+                                <div class="innerpara">
+                                    The asset is built for, but not limited to; QA Engineers (to automate repetitive test cases and reduce manual regression efforts) and Test Automation Architects (to design scalable test frameworks using reusable components).
+                                </div>
+                                <u>Problem Statement</u>
+                                <div class="innerpara">
+                                    Manual test script creation is time-consuming, error-prone, and often requires specialized coding skills.
+                                    As web applications evolve rapidly, maintaining test scripts becomes a bottleneck—leading to broken tests, delayed releases, and reduced confidence in product quality.
+                                    Existing automation tools either demand high technical proficiency or lack flexibility in customizing test logic post-recording.
+                                </div>
+                                <u>Product Objective</u>
+                                <div class="innerpara">
+                                    To deliver a user-friendly, flexible test automation asset that:
+                                    <div style="text-indent: 5%;">1. &ensp;Simplifies element capture through manual scraping or click-and-record.</div>
+                                    <div style="text-indent: 5%;">2. &ensp;Enables users to edit and customize test logic using captured elements.</div>
+                                    <div style="text-indent: 5%;">3. &ensp;Reduces test creation time and improves maintainability.</div>
+                                    <div style="text-indent: 5%;">4. &ensp;Bridges the gap between technical and non-technical stakeholders in the QA process.</div>
+                                    <div style="text-indent: 5%;">5. &ensp;Supports scalable, reusable test flows that adapt to evolving UI structures.</div>
+                                </div>
+                            </fieldset><br/>
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Strategy & Execution</legend>
+                                <div class="innerpara">A cross-functional team collaborated to build Script Automator:
+                                    <div style="text-indent: 5%;">&bull; &ensp;Product team defined core use cases around test automation, element scraping, and script editing, ensuring alignment with QA pain points.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Engineering team developed the scraping engine and click-record interface, optimizing for speed and accuracy across dynamic web apps.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Design team crafted an intuitive UI for script editing and element management, enabling low-code accessibility for non-technical users.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;QA team validated test script generation across multiple browsers and workflows, ensuring reliability and scalability.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Security & Compliance team reviewed data handling and DOM access protocols to ensure safe usage in enterprise environments.</div>
+                                </div>
+                                <u>Prioritization</u>
+                                <div class="innerpara">
+                                    Prioritization was guided by real-world QA workflows and feedback from early adopters. Feature roadmap was driven by user impact and technical feasibility:
+                                    <div style="text-indent: 5%;">&bull; &ensp;Phase 1 focused on core automation: element scraping, click-record, and basic script editing.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Phase 2 introduced reusable components, conditional logic, and script versioning.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Phase 3 planned for CI/CD integration, test result dashboards, and role-based access control.</div>
+                                </div>
+                                <u>Methodology & Tools</u>
+                                <div class="innerpara">
+                                    Agile methodology was adopted to ensure iterative delivery and stakeholder alignment:
+                                    <div style="text-indent: 5%;">&bull; &ensp;Scrum framework enabled bi-weekly sprints, backlog grooming, and sprint reviews.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Azure DevOps was used for work item tracking, code repositories, and automated build pipelines.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;User feedback loops were embedded via sprint demos and usability testing sessions.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Test automation frameworks like Selenium and Playwright were evaluated for compatibility and extensibility.</div>
+                                </div>
+                            </fieldset><br/>
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Product Impact & Metrics</legend>
+                                <div class="card-container">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <div class="circle">
+                                                    <span class="circle-content">73</span>%
+                                                </div>
+                                                <p class="description">Decrease in time spent on creating scripts</p>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <div class="graph-wrapper">
+                                                    <div class="y-axis-label">Time (in minutes)</div>
+                                                    <div class="y-axis-units">
+                                                        <div>16</div>
+                                                        <div>14</div>
+                                                        <div>12</div>
+                                                        <div>10</div>
+                                                        <div>8</div>
+                                                        <div>6</div>
+                                                        <div>4</div>
+                                                        <div>2</div>
+                                                    </div>
+                                                    <div class="bar-graph">
+                                                        <div class="bar manual P3first"><span>Manual</span></div>
+                                                        <div class="bar asset P3first"><span>Asset</span></div>
+                                                    </div>
+                                                    <div class="x-axis-line"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <div class="circle">
+                                                    <span class="circle-content">80</span>%
+                                                </div>
+                                                <p class="description">Decrease in time spent on updating components within scripts</p>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <div class="graph-wrapper">
+                                                    <div class="y-axis-label">Time (in seconds)</div>
+                                                    <div class="y-axis-units">
+                                                        <div>70</div>
+                                                        <div>60</div>
+                                                        <div>50</div>
+                                                        <div>40</div>
+                                                        <div>30</div>
+                                                        <div>20</div>
+                                                        <div>10</div>
+                                                    </div>
+                                                    <div class="bar-graph">
+                                                        <div class="bar manual P3second"><span>Manual</span></div>
+                                                        <div class="bar asset P3second"><span>Asset</span></div>
+                                                    </div>
+                                                    <div class="x-axis-line"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <div class="circle">
+                                                    <span class="circle-content">40</span>%
+                                                </div>
+                                                <p class="description">Decrease in time spent to onboard business users</p>
+                                            </div>
+                                            <div class="flip-card-back">
+                                                <div class="graph-wrapper">
+                                                    <div class="y-axis-label">Time (in days)</div>
+                                                    <div class="y-axis-units">
+                                                        <div>7</div>
+                                                        <div>6</div>
+                                                        <div>5</div>
+                                                        <div>4</div>
+                                                        <div>3</div>
+                                                        <div>2</div>
+                                                        <div>1</div>
+                                                    </div>
+                                                    <div class="bar-graph">
+                                                        <div class="bar manual P3third"><span>Manual</span></div>
+                                                        <div class="bar asset P3third"><span>Asset</span></div>
+                                                    </div>
+                                                    <div class="x-axis-line"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset><br/>
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Reflections</legend>
+                                <div class="innerpara">Building Script Automator surfaced key insights that shaped both product and process.
+                                    <div style="text-indent: 5%;">&bull; &ensp;Early collaboration with QA teams revealed the need for editable logic post-recording—this pivoted the tool from a recorder to a true automation assistant.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Prototyping the scraping engine with real-world web apps helped uncover edge cases in DOM traversal and led to smarter element tagging.</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Continuous feedback loops with agile teams ensured the asset remained adaptable to evolving test strategies and CI/CD integration needs.</div>
+                                </div>
+                            </fieldset><br/>
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Artefacts</legend>
+                                <div class="innerpara">To comply with my employer's confidentiality and privacy policies, the mockups have been provided instead of the exact artefacts.
+                                </div>
+                                <div class="artefacts-container">
+                                    <img class="P3Art1 enlargeable" src="ScriptAutomator1.png" width="100%">
+                                    <img class="P3Art2 enlargeable" src="ScriptAutomator2.png" width="100%">
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+            </div>
+            <div id="Personal projects" class="tabcontent">
+                <h3>Outside of formal roles, I've explored ideas that reflect my curiosity. These personal projects are where experimentation meets purpose.</h3>
+                <button class="collapsible">This portfolio</button>
+                    <div class="content">
+                        <div class="innercontent">
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Purpose</legend>
+                                <div class="innerpara">
+                                    This portfolio was created to showcase the intersection of strategic product ownership, technical depth, and design-driven storytelling. It reflects my commitment to building resilient, user-centric solutions that solve real-world problems—whether through automation, UI/UX refinement, or agile leadership. Each artefact is curated not just to demonstrate capability, but to communicate clarity, impact, and continuous improvement.
+                                </div>
+                                <div class="innerpara">
+                                    In a time when global geopolitical shifts have disrupted markets and reshaped hiring landscapes, standing out requires more than credentials—it demands clarity of purpose and proof of execution. This portfolio is my response: a living canvas that not only highlights my professional journey, but also demonstrates adaptability, innovation, and the ability to deliver value in uncertain environments.
+                                </div>
+                            </fieldset><br/>
+                            <fieldset class="fs">
+                                <legend class="lgndclass">References</legend>
+                                <div class="innerpara">To build this portfolio I referenced the below mentioned sources.
+                                    <div style="text-indent: 5%;">&bull; &ensp;W3Schools</div>
+                                    <div style="text-indent: 5%;">&bull; &ensp;Stack Overflow</div>
+                                </div>
+                            </fieldset><br/>
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Outcome</legend>
+                                <div class="innerpara">
+                                    The outcome is what you are currently able to view and interact with. If you want to explore this portfolio from the beginning, click <a href="index.html">here</a>.
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                <button class="collapsible">Architecture with limits</button>
+                    <div class="content">
+                        <div class="innercontent">
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Purpose</legend>
+                                <div class="innerpara">
+                                    Designing a functional and visually appealing home within a compact 30x40 ft plot required a balance of creativity, restraint, and spatial efficiency.
+                                </div>
+                                <div class="innerpara">
+                                    With limited resources and minimal prior experience in architectural software, I embraced the challenge by focusing on usability, natural light, and circulation flow. The blueprint reflects thoughtful planning and intentional design—proving that impactful architecture can emerge from tight constraints and a clear sense of purpose.
+                                </div>
+                            </fieldset><br/>
+                            <fieldset class="fs">
+                                <legend class="lgndclass">References</legend>
+                                <div class="innerpara">To bring this vision to life, I used SweetHome 3D, an open-source home design tool that allowed me to experiment with layout and structure despite my limited technical background in architectural software. The software's intuitive interface and flexibility made it possible to translate ideas into a tangible blueprint, reinforcing the value of accessible tools in early-stage architectural exploration.
+                                </div>
+                            </fieldset><br/>
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Outcome</legend>
+                                <div class="innerpara">
+                                    The final blueprint, presented in the PDF below, captures the complete spatial layout and design logic developed through this project.
+                                    <br/>
+                                </div>
+                                <div class="innerpara">
+                                    <a href="assets/HomePlan.pdf" download style="
+                                    text-decoration: none;
+                                    padding: 0.5em 1em;
+                                    background-color: rgba(11, 135, 55, 0.89);
+                                    color: white;
+                                    border-radius: 5px;
+                                    display: inline-flex;
+                                    align-items: center;
+                                    ">
+                                        <i class="fas fa-file-download" style="margin-right: 0.5em;"></i> HomePlan.pdf
+                                    </a>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                <button class="collapsible">Purpose in pigment</button>
+                    <div class="content">
+                        <div class="innercontent">
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Purpose</legend>
+                                <div class="innerpara">
+                                    This project emerged during a time of personal upheaval—physically drained, emotionally isolated, and uncertain about the future after completing my studies with no job in sight. I felt disconnected from purpose and needed to reclaim a sense of agency.
+                                </div>
+                                <div class="innerpara">
+                                    In a moment of quiet rebellion, I chose to paint directly on a wall in my home, despite my parents' doubts. It was more than just art—it was a declaration that I was still here, still capable of creating something meaningful. That wall became a canvas for resilience, and the act of painting became a turning point in my journey toward healing and self-belief.
+                                </div>
+                            </fieldset><br/>
+                            <fieldset class="fs">
+                                <legend class="lgndclass">References</legend>
+                                <div class="innerpara">
+                                    With no formal training in mural art and no access to professional tools, I relied solely on instinct, emotion, and whatever materials I could gather. The wall became my outlet—a quiet protest against stagnation and a bold step toward reclaiming joy.
+                                </div>
+                                <div class="innerpara">
+                                    What began as a defiant gesture turned into a deeply healing experience. To my surprise, even my parents came to admire the result. This project stands as a testament to the power of creative expression when everything else feels out of reach.
+                                </div>
+                            </fieldset><br/>
+                            <fieldset class="fs">
+                                <legend class="lgndclass">Outcome</legend>
+                                <div class="innerpara">
+                                    The mural I painted is documented in the PDF below. It captures not just color and form, but the emotional landscape of someone fighting to stay afloat. It's imperfect, raw, and deeply personal—and that's exactly why it matters.
+                                </div>
+                                <div class="artefacts-container">
+                                    <img class="PP1Art1 enlargeable" src="ThruTheDoor.png" width="74.5%">
+                                    <img class="PP1Art2 enlargeable" src="UpClose.jpg" width="100%">
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div id="footer-placeholder" class="bgcolor-footer"></div>
+    </div>
+    
+    <div class="image-overlay">
+        <span class="close-btn">&times;</span>
+        <img src="" alt="Full Image" class="full-image" />
+    </div>
+  
+    <!-- <div style="height: 300pt"></div> -->
+    <script src="scripts/projects.js"></script>
+    <script src="scripts/footerLoad.js"></script>
+</body>
+</html>
