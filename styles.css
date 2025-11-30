@@ -542,7 +542,7 @@ p {
 
   .artefacts-container {
     display: grid;
-    grid-template-columns: 50% 1fr;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 1fr auto;
   }
 
