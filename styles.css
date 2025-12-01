@@ -543,9 +543,9 @@ p {
   @media (max-width: 768px) {
     .artefacts-container {
       display: grid;
-      grid-auto-flow: row;
-      grid-auto-rows: minmax(200px,1fr);
-      row-gap: 1rem;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      gap: 1rem;
     }
   
     .P1Art1, .P3Art1, .P1Art2, .P3Art2{
@@ -568,8 +568,8 @@ p {
     }
 
     .circle{
-      height: 30vw;
-      width: 30vw;
+      height: 50vw;
+      width: 50vw;
     }
 
     .description{
@@ -587,6 +587,7 @@ p {
     grid-column: 1;
     grid-row: 1;
     cursor: pointer;
+    width:100%;
   }
 
   .P1Art2 {
@@ -594,6 +595,7 @@ p {
     grid-row: 1;
     padding: 0 3%;
     text-align: justify;
+    width:100%;
   }
 
   .image-overlay {
@@ -657,6 +659,7 @@ p {
     grid-row: 1;
     cursor: pointer;
     padding: 0 0.5%;
+    width:100%;
   }
 
   .P3Art2 {
@@ -664,6 +667,7 @@ p {
     grid-row: 1;
     cursor: pointer;
     padding: 0 0.5%;
+    width:100%;
   }
   
   .flip-card:hover .bar.manual.P3first {
