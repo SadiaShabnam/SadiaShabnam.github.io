@@ -540,39 +540,6 @@ p {
     height: 11%;
   }
 
-  @media (max-width: 768px) {
-    .artefacts-container {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: auto auto;
-      gap: 1rem;
-    }
-
-    .card-container {
-      flex-direction: column;   /* stack cards vertically */
-      align-items: center;      /* center them horizontally */
-    }
-  
-    .flip-card {
-      width: 90%;               /* take most of the screen width */
-      height: 90%;             /* let height adjust naturally */
-      margin-bottom: 1rem;      /* spacing between cards */
-    }
-  
-    .flip-card-inner {
-      height: 100%;             /* allow content to expand */
-    }
-
-    .circle{
-      height: 30vw;
-      width: 30vw;
-    }
-
-    .description{
-      font-size: medium;
-    }
-  }
-
   .artefacts-container {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -690,3 +657,36 @@ p {
     height: 35%;
   }
 
+
+  @media (max-width: 768px) {
+    .artefacts-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      gap: 1rem;
+    }
+
+    .card-container {
+      flex-direction: column;   /* stack cards vertically */
+      align-items: center;      /* center them horizontally */
+    }
+  
+    .flip-card {
+      width: 90%;               /* take most of the screen width */
+      height: 90%;             /* let height adjust naturally */
+      margin-bottom: 1rem;      /* spacing between cards */
+    }
+  
+    .flip-card-inner {
+      height: 100%;             /* allow content to expand */
+    }
+
+    .circle{
+      height: 25vw;
+      width: 25vw;
+    }
+
+    .description{
+      font-size: medium;
+    }
+  }
