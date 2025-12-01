@@ -540,6 +540,35 @@ p {
     height: 11%;
   }
 
+  @media (max-width: 768px) {
+    .artefacts-container {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(200px, 1fr);
+      overflow-x: auto;
+      gap: 1rem;
+    }
+  
+    .P1Art1, .P1Art2, .P3Art1, .P3Art2 {
+      width: auto;
+    }
+
+    .card-container {
+      flex-direction: column;   /* stack cards vertically */
+      align-items: center;      /* center them horizontally */
+    }
+  
+    .flip-card {
+      width: 90%;               /* take most of the screen width */
+      height: auto;             /* let height adjust naturally */
+      margin-bottom: 1rem;      /* spacing between cards */
+    }
+  
+    .flip-card-inner {
+      height: auto;             /* allow content to expand */
+    }
+  }
+
   .artefacts-container {
     display: grid;
     grid-template-columns: 50% 50%;
