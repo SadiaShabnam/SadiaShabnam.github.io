@@ -666,6 +666,20 @@ p {
       gap: 1rem;
     }
 
+    .P1Art1, .P3Art1 {
+      grid-column: 1;
+      grid-row: 1;
+      cursor: pointer;
+      width:100%;
+    }
+  
+    .P1Art2, .P3Art2 {
+      grid-column: 1;
+      grid-row: 2;
+      text-align: justify;
+      width:100%;
+    }
+
     .card-container {
       flex-direction: column;   /* stack cards vertically */
       align-items: center;      /* center them horizontally */
