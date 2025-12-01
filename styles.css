@@ -549,7 +549,7 @@ p {
     }
   
     .P1Art1, .P3Art1, .P1Art2, .P3Art2{
-      width: auto;
+      width: 80vw;
     }
 
     .card-container {
@@ -568,8 +568,8 @@ p {
     }
 
     .circle{
-      height: 10vw;
-      width: 10vw;
+      height: 30vw;
+      width: 30vw;
     }
 
     .description{
