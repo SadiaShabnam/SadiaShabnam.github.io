@@ -547,10 +547,6 @@ p {
       grid-template-rows: auto auto;
       gap: 1rem;
     }
-  
-    .P1Art1, .P3Art1, .P1Art2, .P3Art2{
-      width: 80vw;
-    }
 
     .card-container {
       flex-direction: column;   /* stack cards vertically */
@@ -568,8 +564,8 @@ p {
     }
 
     .circle{
-      height: 50vw;
-      width: 50vw;
+      height: 30vw;
+      width: 30vw;
     }
 
     .description{
