@@ -550,7 +550,7 @@ p {
     }
   
     .P1Art1, .P1Art2, .P3Art1, .P3Art2 {
-      width: auto;
+      width: 90%;
     }
 
     .card-container {
@@ -560,12 +560,12 @@ p {
   
     .flip-card {
       width: 90%;               /* take most of the screen width */
-      height: auto;             /* let height adjust naturally */
+      height: 90%;             /* let height adjust naturally */
       margin-bottom: 1rem;      /* spacing between cards */
     }
   
-    .flip-card-inner {
-      height: auto;             /* allow content to expand */
+    .flip-card-inner, .flip-card-front, .flip-card-back {
+      height: 90%;             /* allow content to expand */
     }
   }
 
