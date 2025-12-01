@@ -607,6 +607,7 @@ p {
     border-radius: 2%;
     justify-self: anchor-center;
     background-color: rgba(8, 41, 107, 0.2);
+    width: 74.5%;
   }
 
   .PP1Art2 {
@@ -615,6 +616,7 @@ p {
     cursor: pointer;
     border: #00293c 0.25rem solid;
     border-radius: 2%;
+    width: 100%;
   }
 
   .P3Art1 {
@@ -666,14 +668,21 @@ p {
       gap: 1rem;
     }
 
-    .P1Art1, .P3Art1 {
+    .P1Art1, .P3Art1, .PP1Art1 {
       grid-column: 1;
       grid-row: 1;
       cursor: pointer;
       width:100%;
     }
+
+    .P1Art2 {
+      grid-column: 1;
+      grid-row: 2;
+      text-align: justify;
+      width:90%;
+    }
   
-    .P1Art2, .P3Art2 {
+    .P3Art2, .PP1Art2 {
       grid-column: 1;
       grid-row: 2;
       text-align: justify;
