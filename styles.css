@@ -543,14 +543,20 @@ p {
   @media (max-width: 768px) {
     .artefacts-container {
       display: grid;
-      grid-auto-flow: column;
-      grid-auto-columns: minmax(200px, 1fr);
-      overflow-x: auto;
-      gap: 1rem;
+      grid-template-columns: 1fr auto;
+      grid-template-rows: 50% 50%;
     }
   
-    .P1Art1, .P1Art2, .P3Art1, .P3Art2 {
-      width: 90%;
+    .P1Art1, .P3Art1{
+      grid-column: 1;
+      grid-row: 1;
+      width: fit-content;
+    }
+
+    .P1Art2, .P3Art2{
+      grid-column: 1;
+      grid-row: 2;
+      width: fit-content;
     }
 
     .card-container {
@@ -564,8 +570,8 @@ p {
       margin-bottom: 1rem;      /* spacing between cards */
     }
   
-    .flip-card-inner, .flip-card-front, .flip-card-back {
-      height: 90%;             /* allow content to expand */
+    .flip-card-inner {
+      height: 100%;             /* allow content to expand */
     }
   }
 
